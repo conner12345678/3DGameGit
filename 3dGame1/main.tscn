@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cu0vsecgmukde"]
+[gd_scene load_steps=5 format=3 uid="uid://cu0vsecgmukde"]
 
 [ext_resource type="PackedScene" uid="uid://dwm22cgbjroqd" path="res://Floor.tscn" id="1_tbsc5"]
 [ext_resource type="PackedScene" uid="uid://byvvk7k4o57fh" path="res://player.tscn" id="2_m73cp"]
 [ext_resource type="PackedScene" uid="uid://6lo0x357eew" path="res://wall.tscn" id="3_n2q52"]
+[ext_resource type="PackedScene" uid="uid://xivi51ieoaly" path="res://roof.tscn" id="4_fxihr"]
 
 [node name="Main" type="Node3D"]
 
@@ -32,3 +33,6 @@ transform = Transform3D(-8.24773e-07, 0, 0.1, 0, 12.408, 0, -18.8686, 0, -4.3711
 
 [node name="Wall3" parent="." instance=ExtResource("3_n2q52")]
 transform = Transform3D(6.71953, 0, 0, 0, 5.11014, 0, 0, 0, 0.1, -0.0101798, 9.80661, 9.46304)
+
+[node name="roof" parent="." instance=ExtResource("4_fxihr")]
+transform = Transform3D(1, 0, 0, 0, 0.0826865, 0, 0, 0, 1, 0, 12.8551, -9.68154)
